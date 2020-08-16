@@ -132,6 +132,10 @@ if __name__ == "__main__":
         # feel free to add more GUI texts
         cv2.putText(resized, 'PenguinPi', (15, 50), font, font_scale, font_col, line_type)
 
+        cv2.putText(resized, "Left wheel velocity: "+str(L_Wvel), (15, 500), font, font_scale, font_col, line_type)
+        cv2.putText(resized, "Right wheel velocity: "+str(R_Wvel), (15, 600), font, font_scale, font_col, line_type)
+        
+
         cv2.imshow('video', resized)
         cv2.waitKey(1)
 
